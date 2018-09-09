@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
-<ArrayOfCurrency_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ArrayOfCurrency_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Bank_up">
   <currency_table>
     <name>PLN</name>
     <value>1</value>
   </currency_table>
   <currency_table>
-    <name>EUR</name>
-    <value>4,3079</value>
-  </currency_table>
-    <currency_table>
-    <name>USD</name>
-    <value>3,6995</value>
+    <name>GBP</name>
+    <value>4.7887</value>
   </currency_table>
   <currency_table>
-    <name>GBP</name>
-    <value>4,7887</value>
+    <name>USD</name>
+    <value>3.6995</value>
+  </currency_table>
+  <currency_table>
+    <name>EUR</name>
+    <value>4.3079</value>
   </currency_table>
   <currency_table>
     <name>JPY</name>
-    <value>334,11</value>
+    <value>0.033411</value>
   </currency_table>
   <currency_table>
     <name>CHF</name>
-    <value>3,8335</value>
+    <value>3.8335</value>
   </currency_table>
 </ArrayOfCurrency_table>

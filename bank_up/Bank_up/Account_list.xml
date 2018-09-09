@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Bank_up">
+  <account>
+    <acc_nr>100002</acc_nr>
+    <owner>Kowalski</owner>
+    <currency>PLN</currency>
+    <interest_type>0</interest_type>
+    <balance>1535.47</balance>
+  </account>
+  <account>
+    <acc_nr>100003</acc_nr>
+    <owner>Stefan</owner>
+    <currency>GBP</currency>
+    <interest_type>0.01</interest_type>
+    <balance>1000</balance>
+  </account>
+  <account>
+    <acc_nr>100004</acc_nr>
+    <owner>Nowak</owner>
+    <currency>CHY</currency>
+    <interest_type>-0.02</interest_type>
+    <balance>1000</balance>
+  </account>
+  <account>
+    <acc_nr>100009</acc_nr>
+    <owner>Alex Kirsh</owner>
+    <currency>USD</currency>
+    <interest_type>0.02</interest_type>
+    <balance>10026.49</balance>
+  </account>
+  <account>
+    <acc_nr>100008</acc_nr>
+    <owner>Freddy Mercury</owner>
+    <currency>GBP</currency>
+    <interest_type>0.1</interest_type>
+    <balance>20000</balance>
+  </account>
+  <account>
+    <acc_nr>100007</acc_nr>
+    <owner>Sajgonki</owner>
+    <currency>JPY</currency>
+    <interest_type>0</interest_type>
+    <balance>250</balance>
+  </account>
+  <account>
+    <acc_nr>100006</acc_nr>
+    <owner>Pie</owner>
+    <currency>CHF</currency>
+    <interest_type>0</interest_type>
+    <balance>3.14</balance>
+  </account>
+</ArrayOfAccount>
