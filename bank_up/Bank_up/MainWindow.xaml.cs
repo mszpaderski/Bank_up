@@ -81,6 +81,7 @@ namespace Bank_up
             fs_acc_write.Close();
         }
 
+        //Otwieranie okna z spisem kont
         private void button_Click(object sender, RoutedEventArgs e)
         {
             accounts acc_page = new accounts();
@@ -88,6 +89,8 @@ namespace Bank_up
         
         }
 
+
+        //Otwieranie okna do tworzenia nowego konta
         private void acc_create_button_Click(object sender, RoutedEventArgs e)
         {
             acc_create_page acc_create_page = new acc_create_page();
