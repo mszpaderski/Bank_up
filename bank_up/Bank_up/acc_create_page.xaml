@@ -14,10 +14,20 @@
         <TextBox x:Name="acc_nr_text" HorizontalAlignment="Left" Height="23" Margin="123,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="19,136,0,0" TextWrapping="Wrap" Text="Typ odsetek:" VerticalAlignment="Top"/>
         <TextBox x:Name="interest_text" HorizontalAlignment="Left" Height="23" Margin="123,135,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="19,171,0,0" TextWrapping="Wrap" Text="Początkowe saldo:" VerticalAlignment="Top"/>
-        <TextBox x:Name="balance_text" HorizontalAlignment="Left" Height="23" Margin="123,170,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="add_acc_butt" Content="Dodaj konto" HorizontalAlignment="Left" Margin="168,224,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="19,197,0,0" TextWrapping="Wrap" Text="Początkowe saldo:" VerticalAlignment="Top"/>
+        <TextBox x:Name="balance_text" HorizontalAlignment="Left" Height="23" Margin="123,196,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="add_acc_butt" Content="Dodaj konto" HorizontalAlignment="Left" Margin="168,239,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <ComboBox x:Name="combo_curr" HorizontalAlignment="Left" Margin="123,98,0,0" VerticalAlignment="Top" Width="77"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="21,161,0,0" TextWrapping="Wrap" Text="Dodatnia liczba oznacza oszczędności, ujemna odsetki debetowe. 1% = 0.01 (Podać z kropką)." VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="25" Width="210" FontSize="8">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.002"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
 
     </Grid>
 </Window>
