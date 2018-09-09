@@ -24,6 +24,7 @@ namespace Bank_up
         {
             InitializeComponent();
 
+            // Inicjalizacja listy walut
             foreach (currency_table currency in mw.currency_list)
             {
                 combo_curr.Items.Add(currency.name);
@@ -32,6 +33,7 @@ namespace Bank_up
 
         }
 
+        //Tworzenie nowego konta.
         private void button_Click(object sender, RoutedEventArgs e)
         {
             account acc_add = new account();

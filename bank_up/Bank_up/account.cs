@@ -11,7 +11,7 @@ namespace Bank_up
         public double interest_type { get; set; }
         public double balance { get; set; }
 
-
+        //Wypłata
         public void withdraw(double amount, string w_currency) // Polecenie wypłaty które sprawdza zgodność waluty i przelicza w przypadku innej waluty.
         {
             if (string.Equals(this.currency, w_currency)) // Jeśli ta sama waluta, zrób przelew
@@ -28,7 +28,9 @@ namespace Bank_up
         {
             this.balance = Math.Round(this.balance - amount, 2);
         }
+        //Koniec wypłaty
 
+        // Wpłata
         public void deposit(double amount, string d_currency) // Polecenie wypłaty które sprawdza zgodność waluty i przelicza w przypadku innej waluty.
         {
             if (string.Equals(this.currency, d_currency)) // Jeśli ta sama waluta, zrób przelew
@@ -45,9 +47,10 @@ namespace Bank_up
         {
             this.balance = Math.Round(this.balance + amount, 2);
         }
+        // Koniec wpłaty
 
 
-
+        // Funkcja przeliczająca walutę, bierze kwotę, dzieli przez walutę przelewu i mnoży przez walutę konta. Z założenia PLN jest równy przelicznikowi 1.
         public double recalculate(double amount, string o_currency)
         {
             MainWindow mw = new MainWindow();
@@ -56,8 +59,8 @@ namespace Bank_up
 
 
 
-
-        public void bring_interests() // Funkcja doliczająca odsetki albo odejmująca oprocentowanie.
+        // Funkcja doliczająca odsetki albo odejmująca oprocentowanie.
+        public void bring_interests()
         {
             this.balance = Math.Round(this.balance * (1 + this.interest_type), 2);
         }

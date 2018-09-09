@@ -27,38 +27,40 @@ namespace Bank_up
         {
             InitializeComponent();
 
+            // Inicjalizacja listy walut
             foreach (currency_table currency in mw.currency_list)
             {
                 combo_curr.Items.Add(currency.name);
             }
             combo_curr.SelectedIndex = 0;
+
+            // Uzupełnienie listy kont.
             acc_grid.ItemsSource = mw.account_list;
         }
 
-        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
+        // Wciśnięcie funkcji wypłaty powoduje znalezienie konta o odpowiednim numerze i przesłaniu komendy wykonania przelewu z tego konta.
         private void withdraw_butt_Click(object sender, RoutedEventArgs e)
         {
             account acc = mw.account_list.Find(x => x.acc_nr == int.Parse(acc_nr_text.Text));
             acc.withdraw(double.Parse(value_text.Text), combo_curr.Text);
-            MessageBox.Show(System.Convert.ToString(acc.balance));
+            MessageBox.Show("Saldo po przelewie: " + System.Convert.ToString(acc.balance));
             mw.save_acc_list();
             refresh_acc_list();
         }
 
+
+        // Wciśnięcie funkcji wpłaty powoduje znalezienie konta o odpowiednim numerze i przesłaniu komendy wykonania przelewu na to konto.
         private void deposit_butt_Click(object sender, RoutedEventArgs e)
         {
             account acc = mw.account_list.Find(x => x.acc_nr == int.Parse(acc_nr_text.Text));
             acc.deposit(double.Parse(value_text.Text), combo_curr.Text);
-            MessageBox.Show(System.Convert.ToString(acc.balance));
+            MessageBox.Show("Saldo po przelewie: " + System.Convert.ToString(acc.balance));
             mw.save_acc_list();
             refresh_acc_list();
 
         }
 
+        //Odświerzenie listy kont w oknie.
         public void refresh_acc_list()
         {
             acc_grid.ItemsSource = null;
